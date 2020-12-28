@@ -1,0 +1,25 @@
+section.hero {
+    background-image: url(https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/films/Sound%20-%203%20para.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.navbar-brand{
+    background: url(https://logos-voiture.com/wp-content/uploads/2020/01/Mclaren-Logo.png) no-repeat center center;
+    background-size: cover;
+    width: 152px;
+}
+
+#motor{
+    border-radius: 4%;
+}
+
+figure.image{
+    box-shadow: 0px 0px 10px #777,
+    0px 10px 10px -5px RGBa(220,120,0,0.5);
+
+}
+.field{
+    margin-left: 20%;
+    margin-right: 20%;
+}
