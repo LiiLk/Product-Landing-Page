@@ -9,35 +9,31 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<section class="hero is-fullheight">
-    <header class="nav" id="header">
-        <nav class="navbar is-light" id="nav-bar" role="navigation">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="#"></a>
-                    <div class="navbar-burger burger" role="button" aria-label="menu" data-target="navbarMenuHeroA">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </div>
-                </div>
-                <div id="navbarMenuHeroA" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item nav-link" href="#Product">
-                            Product
-                        </a>
-                        <a class="navbar-item nav-link" href="#Customers">
-                            Customers
-                        </a>
-                        <a class="navbar-item nav-link">
-                            support@mclaren.com
-                        </a>
-                    </div>
+    <nav class="navbar is-fixed-top" id="nav-bar" role="navigation" aria-label="main navigation" id="header">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#"></a>
+
+            </div>
+        <div class="navbar-burger" role="button" aria-label="menu" data-target="navbarMenuHeroA" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item nav-link" href="#Product">
+                        Product
+                    </a>
+                    <a class="navbar-item nav-link" href="#Customers">
+                        Customers
+                    </a>
+                    <a class="navbar-item nav-link">
+                        support@mclaren.com
+                    </a>
                 </div>
             </div>
-        </nav>
-    </header>
-
+    </nav>
+<section class="hero is-fullheight" id="mclaren">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title is-size-2-desktop is-size-4-mobile has-text-white">
@@ -50,24 +46,24 @@
     </div>
 </section>
 
-<section class="section">
 
-
-    <div class="container" id="Customers">
-        <div class="content" id="motor">
-                <figure class="image">
-                    <img class="is-16by9" src="https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/overview/1920x1080/P14%20engine%202.jpg" alt="mclaren">
-                </figure>
-        </div>
-    </div>
-
-    <div class="container" id="Product">
-        <h1 class="title has-text-centered mt-4">Join the power of new generation of hypercars</h1>
+    <div class="card has-background-light" id="Product">
+        <h1 class="title has-text-centered mt-4 is-size-3">Join the power of new generation of hypercars</h1>
         <form id="form">
-            <div class="field">
-                <label class="label is-medium has-text-centered">Receive the PDF Product to know the different features</label>
+            <label class="label is-medium has-text-centered is-size-4">Receive the PDF Product to know the different features</label>
+            <div class="card-content">
+                <label class="is-size-desktop-4 has-text-dark" id="name-label">Name</label>
+                <div class="control has-icons-left">
+                    <input class="input is-medium" type="text" placeholder="Enter your Name" required>
+                    <span class="icon is-medium is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="card-content">
+                <label class="is-size-desktop-4 has-text-dark" id="email-label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input is-medium" type="email" placeholder="Enter your email address">
+                    <input class="input is-medium" id="email" type="email" placeholder="Enter your email address" required>
                     <span class="icon is-medium is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
@@ -76,13 +72,30 @@
                     </span>
                 </div>
             </div>
-            <div class="field">
-                <div class="buttons">
-                    <button class="button is-dark is-fullwidth">More information about Mclaren 720s </button>
+            <div class="card-content">
+                <div class="control">
+                    <form action="https://www.freecodecamp.com/email-submit">
+                        <input class="button is-fullwidth is-dark" id="submit" type="submit" value="Receive information about Mclaren 720s">
+                    </form>
                 </div>
             </div>
+
         </form>
+
+
+    </div>
+
+<section class="section">
+    <div class="container">
+        <div class="field">
+            <p class="title has-text-centered">The full force of McLaren</p>
+            <p class="subtitle mb-5 has-text-centered">Look the video if you want to see the power of 720s</p>
+        </div>
+        <div class="columns" id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dbrF_NJNXc8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
     </div>
 </section>
 </body>
-</html>
+</html> 
