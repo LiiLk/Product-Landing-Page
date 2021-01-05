@@ -1,8 +1,13 @@
-section.hero {
+#mclaren {
     background-image: url(https://cars.mclaren.com/content/dam/mclaren-automotive/models/720s/720s/films/Sound%20-%203%20para.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    position: relative;
 }
+
+
 
 .navbar-brand{
     background: url(https://logos-voiture.com/wp-content/uploads/2020/01/Mclaren-Logo.png) no-repeat center center;
@@ -19,7 +24,39 @@ figure.image{
     0px 10px 10px -5px RGBa(220,120,0,0.5);
 
 }
-.field{
-    margin-left: 20%;
-    margin-right: 20%;
+.card-content{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+}
+card{
+    border: 1px solid black;
+}
+
+@media all and (orientation: portrait){
+    .navbar-burger.left {
+        margin-right: auto;
+        margin-left: 0;
+    }
+}
+
+.buttons.is-centered {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#video {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+#video iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
